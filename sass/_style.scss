@@ -79,10 +79,11 @@ margin-top: 20px;
 		padding:20px;
 
 		div.profilebrief {
-			&>div:first-child{
-				.profileimagebig {
+			.profileimagebig {
 					font-size: 140px;
 				}
+			&>div:first-of-type{
+				
 				.profileinfo {
 					p:first-child{
 					color: $pcolor;
@@ -91,13 +92,17 @@ margin-top: 20px;
 				h1 {
 					color: $fcolor;
 					@include fontd(500,42);
+					padding: 5px 0px;
 				}
 				p.desig{
 					@include fontd(300,18)
 				}
 
 			}
-			.profileinfotwo {
+			
+			}
+			.profileinfotwo {	
+				margin-top: 25px;
 				&>div{
 					float: left;
 					&>p:first-child{
@@ -108,7 +113,6 @@ margin-top: 20px;
 					}
 				}
 			} 
-			}
 			.profileactions{
 				button {
 					span{
