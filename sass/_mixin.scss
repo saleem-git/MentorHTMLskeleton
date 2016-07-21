@@ -1,0 +1,57 @@
+$pcolor:#e85629;
+$fcolor:#6b6766;
+
+body {
+	font-family: 'Work Sans','Raleway', sans-serif;
+	color: $fcolor;
+	font-weight: 400;
+}
+body.social{
+  background: linear-gradient(to left, #960214, #EC4F26);
+}
+p{
+	color: $fcolor;
+}
+@mixin centercontent ($width) {
+	width:$width;
+	margin: 0 auto;
+}
+
+@mixin fontd($weight,$size) {
+	font-weight: $weight;
+	font-size:$size+px;
+}
+
+.btnfont {
+	font: 500 14px 'Work Sans';
+}
+.btn {
+	background-color: #F05F29;
+	font: 500 14px 'Work Sans';
+	border-radius: 25px;
+	width: 180px;
+	border: none;
+	box-sizing: border-box;
+	height: 40px;
+	color: #fff;
+}
+.btnwhite{
+	background-color:#fff;
+	color: #F05F29;
+	border:1px solid #F05F29;
+}
+.material-icons.primary {
+ color: #E85629; 
+}
+.left {
+	float: left;
+}
+.right {
+	float:right;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+

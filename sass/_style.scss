@@ -1,0 +1,130 @@
+ p.cName {
+    font-size: 42px;
+    font-weight: 300;
+    padding-bottom: 33px;
+    text-align: center;
+    color: #fff;
+    margin-top: 5%;
+}
+p.cName span {
+    font-weight: 600;
+}
+.nenLogo {
+  margin: 0px auto;
+width: 388px;
+display: block;
+}
+
+ div.left {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 35%;
+  min-width: 470px; 
+}
+
+form#login-form {
+  background: #fff;
+  margin: 2em auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.3em;
+  padding: 30px;
+}
+
+div.left label {
+  display: inline-block;
+  color: gray;
+  font-size: 1.1em;
+  margin-top: 0.6em;
+}
+div.left input {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+div.left input[type="email"], div.left input[type="password"] {
+  border: 0.1em solid #dfdfdf;
+  padding: 1em;
+  margin:0.6em auto;
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.2em rgba(223, 223, 223, 0.2);
+  transition: all 0.15s ease-in-out;
+}
+div.left input[type="email"]:focus, div.left input[type="password"]:focus {
+  outline: none;
+  border: 0.1em solid #bdbdbd;
+}
+div.left input[type="submit"] {
+background-color: rgb(232,86,41);
+color: #fff;
+outline: none;
+text-transform: uppercase;
+padding: 10px;
+overflow: hidden;
+border: none;
+letter-spacing: 0.1em;
+border-radius: 0.4em;
+transition: all 0.15s ease-in-out;
+margin-top: 20px;
+}
+/*div.left input[type="submit"]:hover {
+  background: rgba(248, 95, 100, 0.8);
+}*/
+.mentorView {
+	background-color: #EEEDE9;
+
+	section {
+		@include centercontent(1200px);
+		background-color: #fff;
+		padding:20px;
+
+		div.profilebrief {
+			&>div:first-child{
+				.profileimagebig {
+					font-size: 140px;
+				}
+				.profileinfo {
+					p:first-child{
+					color: $pcolor;
+					@include fontd(600,14);
+				}
+				h1 {
+					color: $fcolor;
+					@include fontd(500,42);
+				}
+				p.desig{
+					@include fontd(300,18)
+				}
+
+			}
+			.profileinfotwo {
+				&>div{
+					float: left;
+					&>p:first-child{
+						@include fontd(600,12);
+					}
+					&>p:nth-child(2){
+						@include fontd(400,18);
+					}
+				}
+			} 
+			}
+			.profileactions{
+				button {
+					span{
+						position: relative;
+						bottom: 7px;
+			
+					}
+					i.material-icons {
+						padding: 5px;
+					}
+					&:not(.btnwhite) i.material-icons {
+							color: #fff;
+						}
+				}
+			}
+			
+		}
+	}
+}
