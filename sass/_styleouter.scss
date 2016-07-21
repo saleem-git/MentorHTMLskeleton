@@ -23,7 +23,7 @@
 }
 .inner-header
 {
-	background-color:#E85629;
+	background-color:$pcolor;
 	height:51px;
 	clear:both;
 		.left-icons
@@ -134,7 +134,7 @@
 				 	text-decoration: none !important;
 				    margin-top: 30px;
 				    display: inline-block;
-				    color: rgba(162, 162, 162, 1);
+				    color:$fcolor;
 				    @include fontd(600,14);
    				}
     		}
@@ -170,12 +170,12 @@
 	    						.name
 	    						{
 	    							display: block;
-									color: rgba(107, 103, 102, 1);
+									color:$fcolor;
 								    @include fontd(500,20);
 	    						}
 	    						.last-name
 	    						{
-   									color:rgba(107, 103, 102, 1);
+   									color:$fcolor;
    									@include fontd(400,14);
 	    						}
 	    					}
@@ -185,14 +185,14 @@
 	    					    padding: 12px 0;
 	    					   .location-name
 	    					{
-	    						color: rgba(107, 103, 102, 1);
+	    						color:$fcolor;
 	    						padding-bottom: 4px;
     							@include fontd(600,12);
 	    					}
 	    					.places
 	    					{
 	    						@include fontd(400,16);
-	    						color:rgba(107, 103, 102, 1);
+	    						color:$fcolor;
 	    					}
 
 
@@ -209,7 +209,7 @@
 						    bottom: 0;
 						    clear: both;
 						    width: 86.9%;
-						    color:rgba(0, 0, 0, 1);
+						    color:$fcolor;
 						    @include fontd(600,14);
 	    				}
     			}
