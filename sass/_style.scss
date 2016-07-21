@@ -76,14 +76,22 @@ margin-top: 20px;
 	section {
 		@include centercontent(1200px);
 		background-color: #fff;
-		padding:20px;
-
+		
+		&>div{
+			padding:20px;
+		}
+		&>div:first-child{
+			border-bottom:1px solid rgba(0, 0, 0, 0.07);
+		}
 		div.profilebrief {
+			box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.07);
+
 			.profileimagebig {
 					font-size: 140px;
 				}
 			&>div:first-of-type{
-				
+				width: 55%;
+				min-width: 640px;
 				.profileinfo {
 					p:first-child{
 					color: $pcolor;
@@ -105,6 +113,14 @@ margin-top: 20px;
 				margin-top: 25px;
 				&>div{
 					float: left;
+					width: 30%;
+					&:first-child span{
+						color: rgb(153, 0, 20);
+						text-decoration: underline;
+					}
+					&:nth-child(3) span {
+						@include fontd(600,18);
+					}
 					&>p:first-child{
 						@include fontd(600,12);
 					}
